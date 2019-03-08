@@ -4,5 +4,5 @@
  * two locations.
  */
 public class Flight {
-	//TODO: Implement me!
+	// What should we do here?
 }
