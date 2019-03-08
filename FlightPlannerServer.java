@@ -72,5 +72,9 @@ public class FlightPlannerServer extends ConsoleProgram
 
     private void processLine(String line) {
     	// What should we do here?
+    	Flight flight = new Flight(line);
+    	//add to an array list
+    	flightMap.put(flight.getSourceFlight(), value)
+    	//constructor takes in a string of source, destination, time
     }
 }
