@@ -30,8 +30,12 @@ public class FlightPlannerServer extends ConsoleProgram
     /* The server object that we use to listen for requests */
     private SimpleServer server;
     
+    //we want to create a mapping of a String for start city to an arrayList of Flights
+    private HashMap<String, ArrayList<Flight>> flightMap;
+    
    
     public void run() {
+    	flightMap = new HashMap<String, ArrayList<Flight>>();
         server = new SimpleServer(this, PORT); // Initialize a server
         server.start(); // Start the server
         println("Starting server...");
